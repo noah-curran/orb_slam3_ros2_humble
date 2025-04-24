@@ -38,8 +38,8 @@ private:
     cv_bridge::CvImageConstPtr cv_ptrLeft;
     cv_bridge::CvImageConstPtr cv_ptrRight;
 
-    std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image> > left_sub;
-    std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image> > right_sub;
+    message_filters::Subscriber<sensor_msgs::msg::Image> left_sub;
+    message_filters::Subscriber<sensor_msgs::msg::Image> right_sub;
 
     std::shared_ptr<message_filters::Synchronizer<approximate_sync_policy> > syncApproximate;
 };

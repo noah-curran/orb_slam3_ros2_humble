@@ -40,7 +40,7 @@ Tlr: !!opencv-matrix
 
 
 # Camera resolution
-Camera.width: 640
+Camera.width: 848
 Camera.height: 480
 
 # Camera frames per second 
