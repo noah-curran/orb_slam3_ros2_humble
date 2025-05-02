@@ -10,6 +10,7 @@
 #include "Frame.h"
 #include "Map.h"
 #include "Tracking.h"
+#include "MapPoint.h"
 
 #include "utility.hpp"
 
@@ -30,6 +31,7 @@ private:
     cv_bridge::CvImagePtr m_cvImPtr;
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr m_image_subscriber;
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr m_orb_slam_image_publisher;
 };
 
 #endif
